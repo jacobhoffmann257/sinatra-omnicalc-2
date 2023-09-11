@@ -1,14 +1,10 @@
-<h1>Multiplication</h1>
+<h1>New multiplication</h1>
 
-<dl>
-  <dt>First number</dt>
-  <dd><%= @first_number %></dd>
+<form action="/wizard_multiply">
+<label for = "first_num">Multiply this:</label>
+<input id = "first_num" name = "first_num" >
+<label for = "second_num">by this:</label>
+<input id = "second_num" name = "second_num" >
+<button>Multiply</button>
 
-  <dt>Second number</dt>
-  <dd><%= @second_num %></dd>
-
-  <dt>Result</dt>
-  <dd><%= @result %></dd>
-</dl>
-
-<a href="/multiply">Do another multiplication</a>
+</form>
